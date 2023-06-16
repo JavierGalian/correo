@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <form method="POST" class="optin-form">
+        {% csrf_token %}
+        <input id="emailAddress" name="email" type="email" placeholder="Ingrese su correo electrónico">
+        <button type="submit">Desuscribirse</button>
+    </form>  
+{% endblock content %}
